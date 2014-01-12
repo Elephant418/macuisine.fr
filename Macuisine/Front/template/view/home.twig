@@ -1,0 +1,8 @@
+{% extends 'layout/index.twig' %}
+
+{% block content %}
+    <h1>Welcome !</h1>
+    {{ recipe.name() }}<br>
+    
+    Par {{ recipe.author.first_name }}
+{% endblock %}

@@ -1,0 +1,4 @@
+{
+  "require": { "pixel418/Staq": "dev-develop" },
+  "autoload": { "psr-0": { "Macuisine\\": "./" } }
+}

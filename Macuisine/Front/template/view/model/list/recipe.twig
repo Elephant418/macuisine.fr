@@ -1,0 +1,11 @@
+{% extends 'layout/index.twig' %}
+
+{% set recipeList = content %}
+
+{% block content %}
+    {% for recipe in recipeList %}
+        {% autoescape false %}
+            {{ recipe.content }}
+        {% endautoescape %}
+    {% endfor %}
+{% endblock %}
