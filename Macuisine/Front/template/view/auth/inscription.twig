@@ -1,0 +1,28 @@
+{% extends "layout/index.twig" %}
+
+{% block content %}
+<h1>Inscription</h1>
+{% if currentUser %}
+<p>You are already logged</p>
+{% else %}
+<form method="post" action="{{ route( 'Auth', 'inscription' ) }}">
+    {% include 'part/alert-message.twig' with { 'message': form.getInputErrorMessage('first_name'), 'type': 'error' } only %}
+    <label>Prénom: <input type="text" name="inscription[first_name]" value="{{ form.get('first_name') }}"/></label>
+
+    {% include 'part/alert-message.twig' with { 'message': form.getInputErrorMessage('last_name'), 'type': 'error' } only %}
+    <label>Nom: <input type="text" name="inscription[last_name]" value="{{ form.get('last_name') }}"/></label>
+
+    {% include 'part/alert-message.twig' with { 'message': form.getInputErrorMessage('email'), 'type': 'error' } only %}
+    <label>Email: <input type="text" name="inscription[email]" value="{{ form.get('email') }}"/></label>
+
+    {% include 'part/alert-message.twig' with { 'message': form.getInputErrorMessage('login'), 'type': 'error' } only %}
+    <label>Login: <input type="text" name="inscription[login]" value="{{ form.get('login') }}"/></label>
+
+    {% include 'part/alert-message.twig' with { 'message': form.getInputErrorMessage('password'), 'type': 'error' } only %}
+    <label>Password: <input type="password" name="inscription[password]"/></label>
+    
+    <input type="hidden" name="redirect" value="{{ redirect }}"/>
+    <button type="submit">Inscription</button>
+</form>
+{% endif %}
+{% endblock %}

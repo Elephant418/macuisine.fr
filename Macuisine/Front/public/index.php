@@ -4,7 +4,7 @@
   (new \Staq\Server)
     ->addApplication( 'Macuisine\\Back', '/admin' )
     ->addApplication( 'Macuisine\\Front' )
-    ->addPlatform( 'local' )
+    ->addPlatform( 'local.perso' )
     ->getCurrentApplication()
     ->run();
 ?>
