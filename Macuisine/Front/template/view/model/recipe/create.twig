@@ -1,0 +1,12 @@
+{% extends "layout/index.twig" %}
+
+{% block content %}
+    <h1>Ajouter une recette</h1>
+    <form method="post" action="{{ route( 'Model\\Recipe', 'create' ) }}">
+        
+        {% include 'part/alert-message.twig' with { 'message': form.getInputErrorMessage('name'), 'type': 'error' } only %}
+        <label>Nom: <input type="text" name="name" value="{{ form.get('name') }}"/></label>
+        
+        <button type="submit">Ajouter</button>
+    </form>
+{% endblock %}

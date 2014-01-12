@@ -57,6 +57,7 @@ CREATE TABLE recipe (
   content VARCHAR(255) NOT NULL,
   image BLOB NULL DEFAULT NULL,
   nb INT(11) NOT NULL,
+  kitchen_id INT(11) NOT NULL,
   PRIMARY KEY (id)
 );
 
