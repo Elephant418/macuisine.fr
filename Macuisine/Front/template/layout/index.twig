@@ -1,0 +1,7 @@
+{% extends "layout/bootstrap.twig" %}
+    
+{% block navbar_right %}
+    {% if currentUser %}
+        Logged in as <a href="#" class="navbar-link">{{ currentUser.first_name }} {{ currentUser.last_name }}</a>
+    {% endif %}
+{% endblock %}
