@@ -196,12 +196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pixel418/Staq.git",
-                "reference": "d02f3d1ab7f2808d4c4fd88ebefe96acdb39d0fb"
+                "reference": "7984147476adf0997cf4f4a67220d04e5f393fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pixel418/Staq/zipball/d02f3d1ab7f2808d4c4fd88ebefe96acdb39d0fb",
-                "reference": "d02f3d1ab7f2808d4c4fd88ebefe96acdb39d0fb",
+                "url": "https://api.github.com/repos/Pixel418/Staq/zipball/7984147476adf0997cf4f4a67220d04e5f393fc4",
+                "reference": "7984147476adf0997cf4f4a67220d04e5f393fc4",
                 "shasum": ""
             },
             "require": {
@@ -238,7 +238,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-01-11 21:25:33"
+            "time": "2014-01-12 16:39:38"
         },
         {
             "name": "pixel418/ubiq",
