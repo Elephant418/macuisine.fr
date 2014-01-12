@@ -1,7 +1,7 @@
 <?php
-namespace Macuisine\Data\Stack\Entity;
+namespace Macuisine\Common\Stack\Entity;
 
-class User extends \Staq\Core\Data\Stack\Storage\File\Entity {
+class User extends User\__Parent {
 
     public function fetchByLogin($login)
     {
