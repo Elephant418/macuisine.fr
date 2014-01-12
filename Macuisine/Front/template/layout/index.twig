@@ -1,7 +1,15 @@
 {% extends "layout/bootstrap.twig" %}
-    
+
+
+{% block navbar_name %}
+    <a href="{{ public( '/' ) }}" class="brand">MaCuisine.fr</a>
+{% endblock %}
+
 {% block navbar_right %}
     {% if currentUser %}
-        Logged in as <a href="#" class="navbar-link">{{ currentUser.first_name }} {{ currentUser.last_name }}</a>
+        <a href="#" class="navbar-link">{{ currentUser.first_name }} {{ currentUser.last_name }}</a>
+        | <a href="{{ route('Auth', 'logout') }}">Se déconnecter</a>
+    {% else %}
+        <a href="{{ route('Auth', 'login') }}">Se connecter</a>
     {% endif %}
 {% endblock %}
