@@ -1,5 +1,0 @@
-Carot Cake
-==========
-
- * carots
- * cake
